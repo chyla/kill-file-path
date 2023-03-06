@@ -28,6 +28,7 @@
 
 ;;; Code:
 
+;;;###autoload
 (defun kill-file-path-basename ()
   "Insert the file name with extension into kill ring."
   (interactive)
@@ -38,6 +39,7 @@
     (kill-new file-basename)
     (message "Copied: %s" file-basename)))
 
+;;;###autoload
 (defun kill-file-path-basename-without-extension ()
   "Insert the file name without extension into kill ring."
   (interactive)
@@ -48,6 +50,7 @@
     (kill-new file-basename-no-ext)
     (message "Copied: %s" file-basename-no-ext)))
 
+;;;###autoload
 (defun kill-file-path-dirname ()
   "Insert the file directory path into kill ring."
   (interactive)
@@ -58,6 +61,7 @@
     (kill-new file-directory-path)
     (message "Copied: %s" file-directory-path)))
 
+;;;###autoload
 (defun kill-file-path ()
   "Insert the full file path into kill ring."
   (interactive)
